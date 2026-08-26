@@ -1,12 +1,12 @@
-import elements
+import elements as ele
+from alchemy import elements as ale
+
 
 def healing_potion() -> str:
     return ("Healing potion brewed with "
-    f"’{elements.create_earth()}’ and ’{elements.create_air()}")
+            f"’{ale.create_earth()}’ and ’{ale.create_air()}’")
+
 
 def strength_potion() -> str:
-    return  ("Strength potion brewed with "
-    f"’{create_fire()}’ and ’{create_water()}")
-if __name__ == "__main__":
-    print(healing_potion())
-    print(strength_potion())
+    return ("Strength potion brewed with "
+            f"’{ele.create_fire()}’ and ’{ele.create_water()}’")
